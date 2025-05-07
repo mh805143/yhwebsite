@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yesenia Huerta – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header class="hero">
+    <h1>Yesenia Huerta</h1>
+    <h2>Computer Science student passionate about building smart, user-centered solutions.</h2>
+    <img src="images/yesenia.jpg" alt="Portrait of Yesenia Huerta" class="hero-image" />
+    <p>Design-minded developer with a CS foundation and curiosity for everything tech.
+        Driven by a passion for building elegant, user-friendly digital solutions.</p>
+    <div class="cta-buttons">
+      <a href="#portfolio" class="btn">View My Work</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="portfolio" class="section">
+    <h3>Selected Work</h3>
+    <div class="projects">
+      <div class="project-card">
+        <h4>iOS Mobile Application – Task Adventure</h4>
+        <p>An interactive productivity app designed to help children with Autism and ADHD build daily routines through gamification.</p>
+        <a href="project-1.html" class="btn">View Case Study</a>
+      </div>            
+      <div class="project-card">
+        <h4>Project Two</h4>
+        <p>Web App / Frontend</p>
+      </div>
+      <div class="project-card">
+        <h4>Project Three</h4>
+        <p>Branding / Visual Design</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h3>About Me</h3>
+    <p>
+      I'm a UX designer passionate about building seamless interfaces that tell a story and serve real users.
+    </p>
+    <a href="#" class="btn">Learn More</a>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h3>Let’s Connect</h3>
+    <p>Ready to collaborate or have questions?</p>
+    <a href="mailto:yesenia.huerta.cs@gmail.com" class="btn">Contact Me</a>
+    <div class="socials">
+    </div>
+  </section>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#6c63ff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.50 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#6c63ff",
+          opacity: 0.1,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          out_mode: "bounce"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>  
+</body>
+</html>

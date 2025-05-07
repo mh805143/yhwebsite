@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Adventure – Case Study</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="particles-js"></div>
+    <section class="section project-content">
+    <h1 class="project-title">Task Adventure</h1>
+
+    <!-- Overview -->
+    <div class="project-block">
+      <h3>Overview</h3>
+      <p>
+        <strong>Task Adventure</strong> is a gamified task management app designed to support children with Autism and ADHD in building daily routines and independence. The app was inspired by the personal experience of one of our team members, whose brother has level two Autism and benefits from structure, routine, and interactive engagement.
+      </p>
+      <p>
+        The app transforms everyday responsibilities into a playful, RPG-style experience that keeps children engaged while easing routine management for parents. The child-facing interface includes customizable avatars, a rewards system, and visual/audio task guidance to support diverse learning needs. Tasks earn points and customization options, while missed tasks gently impact a character's health — creating a motivational system rooted in positive reinforcement.
+      </p>
+      <p>
+        Parents use a separate, streamlined interface to create tasks, track progress, and view daily or long-term performance reports. This dual-interface system empowers children with autonomy while giving parents tools to monitor and support their development in a hands-on yet non-intrusive way.
+      </p>
+      <p>
+        Task Adventure is built using <strong>Swift</strong> and <strong>SwiftUI</strong> for native iOS devices, with <strong>Firebase</strong> providing secure, real-time cloud syncing. This project reflects our team’s shared interest in inclusive technology and creating tools that serve real-world needs.
+      </p>
+    </div>
+
+    <!-- Home screen -->
+    <div class="project-block">
+      <h3>Home Screen</h3>
+      <p>This is the main screen that greets users when they open Task Adventure. From here, they can choose to enter either the Parent or Child portal depending on their role.</p>
+      <img src="images/homepage.png" alt="Task Adventure Home Screen" class="project-image" />
+    </div>
+
+    <!-- My Role & Goals -->
+    <div class="project-block">
+      <h3>My Role & Goals</h3>
+      <p>
+        Our team of three worked collaboratively throughout the project, sharing responsibilities across all major phases — from ideation and planning to development and testing. While each of us contributed to the full build, my primary focus was the <strong>Parent UI</strong> — designing its flow, interface logic, and core functionality.
+      </p>
+      <p>
+        I led the development of the parent-side experience, including task creation, child account linking, progress monitoring, and notification logic. I ensured a smooth integration with <strong>Firebase</strong> so that data synced securely and accurately between parent and child accounts. I also helped shape the overall app structure, contributed to front-end styling, and supported feature testing and debugging across both interfaces.
+      </p>
+      <p>
+        Our shared goal was to create an app that balanced structure and engagement — one that empowered children with special needs while giving parents the tools to support them meaningfully.
+      </p>
+    </div>
+
+    <!-- Project Goals -->
+    <div class="project-block">
+      <h3>Project Goals</h3>
+      <p>
+        The primary goal of Task Adventure was to create a fun, engaging mobile experience that would help children — particularly those with Autism and ADHD — stay focused and motivated while completing everyday tasks. By turning routines into an interactive game, the app aimed to reduce the stress often associated with chores and give children a sense of accomplishment through positive reinforcement.
+      </p>
+      <p>
+        For parents, the goal was to provide a reliable tool to manage daily tasks without constant supervision. The app was designed to give caregivers peace of mind, allowing them to set up and track their child’s routine while encouraging independence.
+      </p>
+      <p>
+        On the technical side, our team set out to build something meaningful — an app that could genuinely impact daily lives. We focused on designing for accessibility and inclusion, creating a product that could serve a community often underserved by mainstream tech. Our goal was to build not just a functioning app, but one that could offer value to families that need thoughtful tools and may not always have access to specialized resources.
+      </p>
+    </div>
+
+    <!-- Development Process -->
+    <div class="project-block">
+      <h3>Development Process</h3>
+      <p>
+        We began by researching which user groups could benefit most from supportive digital tools, and quickly found that children with Autism often struggle with focus, routine, and motivation. We discovered that many of these children respond positively to gamification and predictable structure, which inspired our app concept: turning daily tasks into an interactive, reward-based experience.
+      </p>
+      <p>
+        Once we defined our user base and goals, we used <strong>Figma</strong> to design the full UX flow from both the child's and parent's point of view. We mapped out user journeys, wireframed key screens, and ensured that each interface was tailored to the needs of its user — with accessibility and engagement as top priorities.
+      </p>
+      <p>
+        From there, we built the application using <strong>Xcode</strong> with <strong>Swift</strong> and <strong>SwiftUI</strong>. The team collaborated through <strong>GitHub</strong> and connected all user data in real time using <strong>Firebase</strong> as our backend service. To enhance engagement, we incorporated <strong>Lottie</strong> animations for key actions and rewards. Our development process was iterative — constantly testing, refining, and validating the logic behind the task system, reward feedback, and data synchronization.
+      </p>
+    </div>
+
+    <!-- Parent Portal Screens -->
+    <div class="project-block small-image">
+      <h3>Parent Dashboard – Manage Children</h3>
+      <p>This screen allows parents to manage all linked child accounts. They can view their children, see access codes, add a new child, or remove an account. This functionality supports multiple-child households and provides a seamless way to switch views.</p>
+      <img src="images/children.png" alt="Parent dashboard showing linked children" class="project-image" />
+    </div>
+
+    <div class="project-block small-image">
+      <h3>Adding a New Child Profile</h3>
+      <p>When parents add a new child, they are prompted to create a profile by selecting a name and uploading or choosing a profile photo. They can take a picture, choose from their library, or select a pre-made avatar. This flexibility supports personalization and ease of use across different family setups.</p>
+      <img src="images/addchild.png" alt="Add child profile with photo options" class="project-image" />
+    </div>
+
+    <div class="project-block small-image">
+      <h3>Child Dashboard (Parent View)</h3>
+      <p>Once a child is selected, the parent is taken to their individual dashboard. This screen displays the child’s profile picture, access code, and task progress, and gives the parent access to manage tasks, verify completions, send reminders, or view performance reports. All content is dynamically fetched from <strong>Firebase</strong> based on the selected child’s ID, ensuring personalized and real-time updates.</p>
+      <img src="images/childdash.png" alt="Child dashboard on parent side" class="project-image" />
+    </div>
+
+    <div class="project-block small-image">
+      <h3>Task Completion & Progress Tracking</h3>
+      <p>Parents can track their child's progress in real time through the Progress Tracker. Each task is visually marked as incomplete (❌) or complete (✅), with a circular progress ring summarizing how many tasks have been finished. This gives both parent and child a clear sense of structure and achievement.</p>
+      <div class="project-images">
+        <img src="images/redtasks.png" alt="No tasks completed view" />
+        <img src="images/greentask.png" alt="All tasks completed view" />
+      </div>
+    </div>
+
+    <!-- Child UI Screens -->
+    <div class="project-block small-image">
+      <h3>Child Task View</h3>
+      <p>The child interface features a fun, gamified design with a forest-themed background. Here, children can see their assigned tasks for the day. Tasks appear in red when they are not yet completed, creating a clear visual cue. The simplicity and layout are designed to reduce distractions while encouraging focus and task ownership.</p>
+      <img src="images/childtask.png" alt="Child UI showing uncompleted tasks" class="project-image" />
+    </div>
+
+    <div class="project-block">
+      <h3>Gamified Task Guidance</h3>
+      <p>Each task includes a voice prompt, a matching visual, and an animated avatar to help keep the child engaged. The visuals reinforce understanding for children who may benefit from picture-based cues, while the audio provides accessible instruction. As the child progresses, the avatar reacts and task progress is tracked dynamically.</p>
+      <div class="project-images">
+        <img src="images/brushteeth.png" alt="Task 1: Brush teeth with voice and visual cue" />
+        <img src="images/bed.png" alt="Task 2: Make bed with progress update" />
+        <img src="images/eat.png" alt="Task 3: Eat breakfast with completed progress" />
+      </div>
+    </div>
+
+    <div class="project-block small-image">
+      <h3>Task Completion Feedback (Child View)</h3>
+      <p>Once all tasks are completed, the child is shown a confirmation screen with all tasks marked in green. This visual feedback reinforces a sense of achievement and closes the loop on the day’s responsibilities. It aligns with the app’s goal of building positive routines through clarity and reward.</p>
+      <img src="images/childgreentask.png" alt="Child view of completed task list" class="project-image" />
+    </div>
+
+    <!-- Award -->
+    <div class="project-block">
+      <h3>CSUF ECS Innovation Expo</h3>
+      <p>Our team was honored to receive the <strong>Best Project in Computer Science</strong> award at the <strong>2025 CSUF ECS Innovation Expo</strong>. This recognition reinforced the technical quality and real-world impact of our work.</p>
+      <img src="images/ecsexpo.jpg" alt="Winning Best in Computer Science at CSUF Innovation Expo" class="project-image" />
+    </div>
+
+    <!-- What I Learned -->
+    <div class="project-block">
+      <h3>What I Learned</h3>
+      <p>While we had studied Agile methodologies and app development concepts in class, this project was where everything truly came together. Task Adventure was our opportunity to apply what we’d learned in a real-world scenario — from planning and wireframing to testing, iteration, and problem solving.</p>
+      <p>Throughout the project, we sharpened critical soft skills like <strong>communication</strong>, <strong>collaboration</strong>, and <strong>team-based decision-making</strong>. Technically, we grew more confident in using <strong>Swift, SwiftUI, Firebase, GitHub, and Lottie</strong> — tools we had never worked with before this project.</p>
+      <p>The success of our process and execution was validated when we were awarded <strong>Best in Computer Science</strong> at the <strong>CSUF ECS Innovation Expo</strong>. This recognition affirmed not only the quality of our build, but also the social impact and user-centered thinking behind our app.</p>
+    </div>
+
+    <!-- What’s Next -->
+    <div class="project-block">
+      <h3>What’s Next</h3>
+      <p>After winning <strong>$500</strong> at the CSUF ECS Innovation Expo, we plan to reinvest our prize into improving the app’s infrastructure and scalability. Our first goal is to implement <strong>Firebase Storage</strong> to support cloud-based image uploads and make cross-device syncing possible — a feature that wasn’t feasible during our initial development due to budget constraints.</p>
+      <p>We also plan to <strong>rebuild the app using React Native</strong> so we can launch on both iOS and Android with a shared codebase. This shift will allow us to reach a broader audience and streamline our development process for future iterations.</p>
+      <p>Once core development is complete, we will move into formal testing and QA to refine performance and address any edge cases or usability issues. Our long-term goal is to release Task Adventure as a <strong>subscription-based mobile app</strong> and partner with schools or organizations that support children with special needs. We hope to make routine-building accessible, engaging, and empowering — for families everywhere.</p>
+    </div>
+
+    <!-- Back to Portfolio -->
+    <div class="project-block" style="text-align:center;">
+      <a href="index.html" class="btn secondary">← Back to Portfolio</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 60 },
+      color: { value: "#6c63ff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.50 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#6c63ff",
+        opacity: 0.1,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        out_mode: "bounce"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" }
+      }
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+:root {
+    --bg: #121212;
+    --hero-bg: linear-gradient(135deg, #1f1f1f, #181818);
+    --text: #f0f0f0;
+    --accent: #6c63ff;
+    --secondary: #333;
+    --font: 'Helvetica Neue', sans-serif;
+    --card-bg: #1e1e1e;
+    --card-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font);
+    color: var(--text);
+    background: linear-gradient(-45deg, #1f1f1f, #2a2a2a, #121212, #1e1e1e);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    line-height: 1.6;
+    padding: 2rem;
+  }
+  
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: var(--hero-bg);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
+  }
+
+  .hero-image {
+    width: 220px;
+    height: auto;
+    border-radius: 12px; /* Soft rectangle corners */
+    margin: 1.5rem auto;
+    display: block;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+   
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    color: #bbb;
+  }
+  
+  .cta-buttons {
+    margin-top: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem;
+    background: var(--accent);
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #574dff;
+  }
+  
+  .btn.secondary {
+    background: #444;
+  }
+  
+  .section {
+    padding: 3rem 1rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .project-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.6);
+  }
+  
+  .contact .socials {
+    margin-top: 1rem;
+  }
+  
+  .contact .socials a {
+    margin: 0 0.5rem;
+    font-weight: 500;
+  }
+
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: transparent;
+  }
+
+  .project-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .project-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text);
+  }
+  
+  .project-block {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-block h3 {
+    font-size: 1.75rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  
+  .project-block p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin-bottom: 1rem;
+  }
+  
+  .project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .project-images img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .project-image {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .project-block.small-image .project-image {
+    max-width: 360px;
+  }
+
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
