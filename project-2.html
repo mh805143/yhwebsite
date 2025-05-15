@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Two – Case Study</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <section class="section project-content">
+    <h1 class="project-title">Project Two</h1>
+
+    <div class="project-block">
+      <h3>Overview</h3>
+      <p>Brief description of what Project Two is, who it’s for, and the problem it solves.</p>
+    </div>
+
+    <div class="project-block">
+      <h3>My Role</h3>
+      <p>Explain your contribution: design, dev, research, or all of the above.</p>
+    </div>
+
+    <div class="project-block">
+      <h3>Tech Stack</h3>
+      <p>List the tools, languages, and libraries used: React, Figma, Firebase, etc.</p>
+    </div>
+
+    <div class="project-block">
+      <h3>Challenges</h3>
+      <p>Share what problems you faced and how you overcame them.</p>
+    </div>
+
+    <div class="project-block">
+      <h3>What I Learned</h3>
+      <p>Personal or technical takeaways from this project.</p>
+    </div>
+
+    <div class="project-block" style="text-align:center;">
+      <a href="index.html" class="btn secondary">← Back to Portfolio</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#2ecc71" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#2ecc71",
+          opacity: 0.1,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          out_mode: "bounce"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
