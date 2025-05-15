@@ -82,7 +82,8 @@
   }
   
   .btn:hover {
-    background: #574dff;
+    background: var(--accent);
+      filter: brightness(1.1);
   }
   
   .btn.secondary {
