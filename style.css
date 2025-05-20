@@ -215,6 +215,20 @@
       vertical-align: top;
     }
 
+.project-block h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.project-block div.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+
 
   @keyframes gradientBG {
     0% {
